@@ -14,11 +14,13 @@ public class MavenFreeStyle {
     public static void main(String[] args) {
         System.out.println("Hello World!");
     }
-    
-    public int fibonacci(int a){	
-	if (a >= 2){
-            return (fibonacci(a-1) + fibonacci(a-2));
+   
+	if (n == 0) {
+		return 0;
+	} else if (n== 1)  {
+		return 1;
+	} else {
+		return fibonacciRecursivo(n - 1) + fibonacciRecursivo(n - 2);
 	}
-	return 0;
-    }
+   
 }
