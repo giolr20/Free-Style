@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/UnitTests/JUnit5TestClass.java to edit this template
  */
-package com.mycompany.mavenfreestyle;
+package com.mycompany.freestyle;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.AfterAll;
@@ -13,34 +13,31 @@ import static org.junit.jupiter.api.Assertions.*;
 
 /**
  *
- * @author olivert
+ * @author puk
  */
-public class MavenFreeStyleTest {
+public class FreestyleTest {
     
-    public MavenFreeStyleTest() {
+    public FreestyleTest() {
     }
-
-    /**
-     * Test of main method, of class MavenFreeStyle.
-     */
-    @Test
+    
+   @Test
     public void testMain() {
         System.out.println("main");
         String[] args = null;
-        MavenFreeStyle.main(args);
+        Freestyle.main(args);
     }
 
     @Test 
     public void testFibonacci(){
         //App test = new App();
-        MavenFreeStyle instance = new MavenFreeStyle();
-	assertFalse(instance.fibonacci(1) == 1);
+        Freestyle instance = new Freestyle();
+	assertTrue(instance.fibonacci(1) == 1);
     }
     @Test	
     public void testFibonacci2(){
 	//App test = new App();
-        MavenFreeStyle instance = new MavenFreeStyle();
-        assertFalse(instance.fibonacci(10) == 4);
+        Freestyle instance = new Freestyle();
+        assertTrue(instance.fibonacci(10) == 55);
     }
     
 }
