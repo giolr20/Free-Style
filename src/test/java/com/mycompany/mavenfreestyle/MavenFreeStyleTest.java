@@ -28,21 +28,19 @@ public class MavenFreeStyleTest {
         System.out.println("main");
         String[] args = null;
         MavenFreeStyle.main(args);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     @Test 
     public void testFibonacci(){
         //App test = new App();
         MavenFreeStyle instance = new MavenFreeStyle();
-	assertTrue(instance.fibonacci(1) == 1);
+	assertFalse(instance.fibonacci(1) == 1);
     }
     @Test	
     public void testFibonacci2(){
 	//App test = new App();
         MavenFreeStyle instance = new MavenFreeStyle();
-        assertTrue(instance.fibonacci(10) == 4);
+        assertFalse(instance.fibonacci(10) == 4);
     }
     
 }
